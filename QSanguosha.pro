@@ -3,7 +3,7 @@
 # -------------------------------------------------
 TARGET = QSanguosha
 QT += network widgets sql
-!winrt:QT += declarative
+!winrt:QT += qml quick
 android:QT += androidextras
 TEMPLATE = app
 CONFIG += audio

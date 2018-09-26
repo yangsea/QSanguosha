@@ -60,9 +60,17 @@ struct RoomLayout;
 #include <QMutex>
 #include <QStack>
 #ifndef Q_OS_WINRT
-#include <QDeclarativeEngine>
-#include <QDeclarativeContext>
-#include <QDeclarativeComponent>
+//#include <QDeclarativeEngine>
+//#include <QDeclarativeContext>
+//#include <QDeclarativeComponent>
+#include <QQmlEngine>
+#include <QQmlContext>
+#include <QQmlComponent>
+
+#define QDeclarativeEngine QQmlEngine
+#define QDeclarativeContext QQmlContext
+#define QDeclarativeComponent QQmlComponent
+
 #endif
 class ScriptExecutor : public QDialog {
     Q_OBJECT
